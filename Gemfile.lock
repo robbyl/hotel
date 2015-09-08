@@ -1,0 +1,50 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (2.3.10)
+      actionpack (= 2.3.10)
+    actionpack (2.3.10)
+      activesupport (= 2.3.10)
+      rack (~> 1.1.0)
+    activerecord (2.3.10)
+      activesupport (= 2.3.10)
+    activeresource (2.3.10)
+      activesupport (= 2.3.10)
+    activesupport (2.3.10)
+    cgi_multipart_eof_fix (2.5.0)
+    declarative_authorization (0.5.1)
+    gem_plugin (0.2.3)
+    i18n (0.4.2)
+    mongrel (1.1.5-x86-mingw32)
+      cgi_multipart_eof_fix (>= 2.4)
+      gem_plugin (>= 0.2.3)
+    mysql (2.8.1-x86-mingw32)
+    rack (1.1.6)
+    rails (2.3.10)
+      actionmailer (= 2.3.10)
+      actionpack (= 2.3.10)
+      activerecord (= 2.3.10)
+      activeresource (= 2.3.10)
+      activesupport (= 2.3.10)
+      rake (>= 0.8.3)
+    rake (0.8.7)
+    rush (0.6.8)
+      session
+    session (3.2.0)
+    win32-open3 (0.3.2-x86-mingw32)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  declarative_authorization (= 0.5.1)
+  i18n (= 0.4.2)
+  mongrel (= 1.1.5)
+  mysql (= 2.8.1)
+  rails (= 2.3.10)
+  rake (= 0.8.7)
+  rush (= 0.6.8)
+  win32-open3
+
+BUNDLED WITH
+   1.10.6

@@ -34,6 +34,21 @@ Rails::Initializer.run do |config|
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
+  config.gem 'declarative_authorization', :source => 'http://gemcutter.org'
+
+  config.autoload_once_paths += %W( #{RAILS_ROOT}/lib )
+  config.autoload_once_paths += Dir["#{RAILS_ROOT}/app/models/*"].find_all { |f| File.stat(f).directory? }
+
+  config.reload_plugins = true if RAILS_ENV =="development"
+  config.plugins = [:paperclip,:all]
+
+  if (File.exist?('config/smtp_settings.yml'))
+    SMTP_SETTINGS = YAML.load_file('config/smtp_settings.yml')[RAILS_ENV]
+    if SMTP_SETTINGS      
+      config.action_mailer.delivery_method = :smtp
+      config.action_mailer.smtp_settings = SMTP_SETTINGS
+    end
+  end
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]

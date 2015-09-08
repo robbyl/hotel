@@ -7,14 +7,15 @@ html, body {
 body {
     font-family:sans-serif;
     margin: 0;
+    background: #f0f0f0;
 }
 
 #top_logo {
     margin:0 auto;
     padding-top:15px;
     height:115px; width:155px;
-    /*background:#fff url(../../images/login/fedena_logo.jpg) no-repeat;*/
 }
+
 #top_logo h1 {
     text-indent:-9999px;
 }
@@ -31,12 +32,49 @@ body {
     width: 100%;
     /*background: #B00 url(/images/application/bg_pattern.png) repeat;*/
 }
-#login_area_bg{margin-top: -175px; height:362px;}
-#login_area {height:362px;width:614px;background:#fff url(../../images/login/login_box.jpg) no-repeat;margin:0px auto;}
-#login_area label {display:block;width:200px;margin-left:50px;padding-top:30px;font-weight:bold;color:#888;padding-bottom:5px;font-size:110%;}
+#login_area_bg {
+    margin-top: -175px;
+    height:362px;
+}
+#login_area {
+    height:362px;
+    width:614px;
+    background:#fff;
+    margin: 0px auto;
+    padding-top: 35px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    border-bottom-width:  2px;
+}
 
-#username_textbox_bg, #password_textbox_bg {width:507px;height:58px;margin:0px auto;background:#fff url(../../images/login/text_box.jpg) no-repeat;}
-#username_textbox_bg input, #password_textbox_bg input {width:490px;height:54px;margin:2px 0 0 5px;float:left;border:none;background:transparent;font-size:40px;color:#666;}
+#login_area label {
+    display:block;
+    width:200px;
+    margin-left:50px;
+    padding-top:30px;
+    font-weight:bold;
+    color:#888;
+    padding-bottom:5px;
+    font-size:110%;
+}
+
+#username_textbox_bg, #password_textbox_bg {
+    width:507px;
+    height:58px;
+    margin:0px auto;
+}
+
+#username_textbox_bg input, #password_textbox_bg input {
+    width:490px;
+    height:40px;
+    margin: 2px 0 0 5px;
+    float:left;
+    background:transparent;
+    border: 1px solid #cfcfcf;
+    font-size: 25px;
+    color:#666;
+    padding: 10px;
+}
 
 #submit_area input {
     background:#312d2a;
@@ -60,9 +98,19 @@ body {
 }
 #resetpw_area input {width:85px;height:38px;float:right;margin-right:58px;margin-top:55px;}
 
-#checkbox_area {width:300px;float:left;}
-#checkbox_area label {margin:0;display:inline;padding-left:5px;}
-#checkbox_area input {margin:25px 5px 0 50px;padding:0;}
+#checkbox_area {
+    width:300px;
+    float:left;
+}
+#checkbox_area label {
+    margin:0;
+    display:inline;
+    padding-left:5px;
+}
+#checkbox_area input {
+    margin:25px 5px 0 50px;
+    padding:0;
+}
 
 #notice {
     padding:0;
@@ -76,13 +124,31 @@ body {
     text-align:center;
     font-size:14px;
 }
-#wrapper  #help_forgot_pw {margin:50px auto;text-align:center;width:614px;}
-#wrapper  #help_forgot_pw a {text-decoration:none;font-weight:bold;color:#194f1e;}
-#wrapper  #help_forgot_pw a:hover {text-decoration:underline;font-weight:bold;color:#194f1e;}
+#wrapper  #help_forgot_pw {
+    margin:50px auto;
+    text-align:center;
+    width:614px;
+}
+#wrapper  #help_forgot_pw a {
+    text-decoration:none;
+    font-weight:bold;
+    color:#194f1e;
+}
+#wrapper  #help_forgot_pw a:hover {
+    text-decoration:underline;
+    font-weight:bold;
+    color:#194f1e;
+}
 
-#username_texbox_bg input{border:none;margin:0px; padding:0px;text-align:center;}
+#username_texbox_bg input {
+    border:none;margin:0px;
+    padding:0px;
+    text-align:center;
+}
 
-input[type="text"], input[type="password"], textarea, select {outline: none;}
+input[type="text"], input[type="password"], textarea, select {
+    outline: none;
+}
 
 #footer {
     /* position : relative;
@@ -95,8 +161,8 @@ input[type="text"], input[type="password"], textarea, select {outline: none;}
 #footer_logo {
     height:66px;
     position:relative;
-     width:980px;
-     margin:0 auto;
+    width:980px;
+    margin:0 auto;
 }
 
 #footer_logo a.footer-logo{
@@ -140,6 +206,6 @@ input[type="text"], input[type="password"], textarea, select {outline: none;}
     position:relative;
 }
 .clearfooter {
-height: 66px;
-clear: both;
+    height: 66px;
+    clear: both;
 }
